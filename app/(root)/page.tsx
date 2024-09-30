@@ -1,11 +1,32 @@
-import { Button } from "@/components/ui/button";
+//import { SignedOut } from "@clerk/clerk-react";
+//import { UserButton, ClerkProvider, SignOutButton } from "@clerk/nextjs";
 
-export default function Home() {
+//import { ClerkProvider, SignedOut, UserButton } from '@clerk/nextjs'
+
+import { UserButton } from "@clerk/nextjs";
+const SetupPage = () => {
     return (
       <div className="p-4">
-        <Button size="default">Click Me</Button>
+        <UserButton/>
       </div>
-
     );
   }
   
+  export default SetupPage;
+
+// <UserButton afterSignOutUrl="/"/>
+
+/*
+        <ClerkProvider>
+          <SignedOut>
+            <UserButton/>
+          </SignedOut>
+
+        </ClerkProvider>
+
+*/
+
+/*
+        <UserButton/>
+
+*/
